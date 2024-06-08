@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 10px;
+}
+
+body{
+  background-color: rgb(231, 230, 230);
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper form{
+  display: flex;
+  gap: 6px;
+}
+
+.wrapper input{
+  color: rgb(233, 134, 5);
+  border-radius: 10px;
+  border: none;
+}
+
+.wrapper button{
+  background-color: blueviolet;
+  color: white;
+  width: 40px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.01s;
+}
+
+button:active{
+  background-color: white;
+  color: blueviolet;
+}
+
+
+.task-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.task-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-item{
+  background-color: aqua;
+  width: 450px;
+  
+}

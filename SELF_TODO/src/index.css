@@ -1,0 +1,147 @@
+
+
+/* *BACKGROUND AND ROOT */
+*{
+    margin: 0;
+    padding: 10px;
+}
+
+body{
+    background-color: rgb(228, 228, 228);
+}
+
+/* *TODO FORM */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    gap: 10px;
+}
+
+.form input{
+    color: rgb(132, 0, 255);
+    font-weight: bolder;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+
+.form input:focus{
+    border: 2px solid rgb(132, 0, 255);
+    border-radius: 6px;
+}
+
+.form button{
+    background-color: blueviolet;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+.form button:active{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+i{
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    transition: 0.1s;
+}
+i:active{
+    color: black;
+}
+
+
+/* *TASK LISTS */
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 5px;
+}
+
+
+.items{
+    padding: 0 0 0 0;
+    border-radius: 10px;
+    height: 60px;
+    background-color: rgb(138, 65, 249);
+    width: 450px;
+}
+
+.item-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item-wrapper button.delete{
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.item-wrapper button.delete:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+.item-wrapper button.delete:active{
+    background-color: rgb(255, 0, 0);
+}
+
+.item-wrapper button.edit{
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.item-wrapper button.edit:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+.item-wrapper button.edit:active{
+    background-color: rgb(255, 0, 0);
+}
+
+.item-wrapper i{
+    color: black;
+    padding: 0 0 0 0;
+}
+
+.item-wrapper i:active{
+    color: white;
+}
+
+.item-wrapper input{
+    background-color: rgb(138, 65, 249);
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    outline-style: none;
+}
+
+.list-item:checked + input[type=text]{
+    text-decoration: line-through;
+    color: black;
+}
+
+input[type="checkbox"] {
+    outline: 3px solid black;
+}
